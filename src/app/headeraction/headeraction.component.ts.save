@@ -1,0 +1,27 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-headeraction',
+  templateUrl: './headeraction.component.html',
+  styleUrls: ['./headeraction.component.css']
+})
+export class HeaderactionComponent implements OnInit {
+  hearderaction = true;
+  communauteshow() {
+    return (this.hearderaction = false);
+  }
+  
+  bookList = [ { name: 'eXtreme Programming Explained' constructor() { }
+        },
+        { ngOnInit(): void { name: 'Clean Code' }
+        }
+}
+    ];
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
+

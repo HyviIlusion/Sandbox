@@ -1,0 +1,169 @@
+<div class="navbar bg-base-100 sticky top-0 z-50">
+  <div class="flex-1">
+    <a class="btn btn-ghost normal-case text-xl">Hyvi Universe</a>
+  </div>
+  <div class="flex-none">
+    <div class="dropdown dropdown-end">
+      <label tabindex="0" class="btn btn-ghost btn-circle">
+        <div class="indicator">
+		<svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-8 h-8 stroke-current" viewBox="0 0 512 512"><path d="M461.2 205.5c-16.9-1.2-32.2-6.6-43.4-15.5-.5-.4-1.1-.8-1.7-1.2-58.2-37.4-122.2-56.3-190.3-56.3-54.8 0-111.6 11.7-172.9 35.7V52.8h69.8v24.7c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V52.8h187.2v24.7c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V52.8h69.8v152.7h-.1zm0 255.7H52.8v-249c62.3-26.2 119-38.9 172.9-38.9 59.9 0 116.2 16.6 167.4 49.3 18.2 14.2 42.1 22.6 68 23.9v214.7h.1zM463.1 12H50.9C29.5 12 12 29.5 12 50.9V463.1c0 21.5 17.5 38.9 38.9 38.9h412.2c21.5 0 38.9-17.5 38.9-38.9V50.9c0-21.4-17.5-38.9-38.9-38.9z"/><path d="M227.9 375.1h-42.6v-.5l14-11.7c22-19.6 40.4-39.9 40.4-65.4 0-27.6-18.9-47.6-53.2-47.6-15 0-28.5 3.7-39.2 9.1-6.2 3.1-9 10.5-6.4 17 2.9 7.3 11.3 10.6 18.4 7.2 5.9-2.8 12.7-4.8 19.9-4.8 17.5 0 25 9.8 25 22.2-.5 17.7-16.6 34.8-49.7 64.4l-14.7 13.3c-3.1 2.8-4.9 6.8-4.9 11 0 8.2 6.7 14.9 14.9 14.9H228c8.1 0 14.6-6.5 14.6-14.6-.1-7.9-6.6-14.5-14.7-14.5zM327.3 307.9v33.6h-34.1v-.5l20.3-33.2c5.1-9.6 9.1-18.4 14-28.3h.9c-.6 9.9-1.1 19.3-1.1 28.4zm38.5 33.6h-4.9v-61.1c0-15.4-12.5-27.9-27.9-27.9-9.7 0-18.6 5-23.7 13.2l-46.5 74.9c-1.8 2.8-2.7 6.1-2.7 9.5 0 9.9 8.1 18 18 18h49.3v19.4c0 9.3 7.5 16.8 16.8 16.8s16.8-7.5 16.8-16.8v-19.4h4.9c7.4 0 13.3-6 13.3-13.3-.1-7.3-6-13.3-13.4-13.3z"/></svg>
+          <span class="badge badge-sm indicator-item">5</span>
+        </div>
+      </label>
+      <div tabindex="0" class="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
+        <div class="card-body">
+          <span class="font-bold text-lg">5 dates</span>
+          <span class="text-info">En attente de votre validation</span>
+          <div class="card-actions">
+            <button class="btn btn-primary btn-block">Voir ce qu'on me propose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown dropdown-end">
+      <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+        <div class="w-10 rounded-full">
+          <img src="https://api.lorem.space/image/face?hash=33791" />
+        </div>
+      </label>
+      <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+        <li>
+          <a class="justify-between">
+            Profile
+            <span class="badge">New</span>
+          </a>
+        </li>
+        <li><a>Settings</a></li>
+        <li><a>Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container mx-auto p-4">
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-none gap-4 w-full h-full">
+	<div class="hidden md:block box md:row-span-3">
+	    <div class="card bg-base-100 shadow-xl grow w-full">
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title text-xl pb-4">Mon profil</h2>
+                    <div class="container mx-auto">
+                        <div class="avatar indicator">
+                            <span class="indicator-item badge badge-primary">Adhérent</span>
+                            <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                <img src="https://api.lorem.space/image/face?hash=3174" />
+                            </div>
+                        </div>
+                        <h3 class="font-medium">Nom de scène</h3>
+                    </div>
+                    <textarea class="textarea textarea-bordered" placeholder="Bio"></textarea>
+                    <ul class="steps sm:steps-vertical steps-horizontal">
+                        <li class="step step-primary">Inscription</li>
+                        <li class="step step-primary">Accepter une date</li>
+                        <li class="step">Booker un artiste</li>
+                        <li class="step">Créer une collab'</li>
+                    </ul>
+		    <h3 class="card-title text-xl pb-4">Mon réseau</h3>
+		    <div class="avatar-group -space-x-6">
+ 			<div class="avatar">
+    			   <div class="w-12">
+				<img src="https://api.lorem.space/image/face?hash=4818" />
+			   </div>
+			</div>
+			<div class="avatar">
+    			   <div class="w-12">
+      			       <img src="https://api.lorem.space/image/face?hash=40311" />
+			   </div>
+			</div>
+			<div class="avatar">
+			    <div class="w-12">
+				<img src="https://api.lorem.space/image/face?hash=84348" />
+			    </div>
+			</div>
+			<div class="avatar placeholder">
+			    <div class="w-12 bg-neutral-focus text-neutral-content">
+				<span>+99</span>
+			    </div>
+			</div>
+		     </div>
+                </div>
+            </div>
+	</div>
+	<div class="box md:row-end-1 md:col-start-2 md:col-span-3">
+		<div class="stats shadow-xl grow w-full">
+  
+  <div class="stat">
+    <div class="stat-figure text-primary">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+    </div>
+    <div class="stat-title">Prestations réalisées</div>
+    <div class="stat-value text-primary">25.6K</div>
+    <div class="stat-desc">grâce à la communauté Hyvi!</div>
+  </div>
+  
+  <div class="stat">
+    <div class="stat-figure text-secondary">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+    </div>
+    <div class="stat-title">Artistes bookés</div>
+    <div class="stat-value text-secondary">2.6M</div>
+    <div class="stat-desc">que tu as boosté!</div>
+  </div>
+  
+  <div class="stat">
+    <div class="stat-figure">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.001 512.001" class="inline-block w-8 h-8 stroke-current" xml:space="preserve"><path d="M303 129.734C356.172 86.293 325.299 0 256.569 0c-68.742 0-99.598 86.298-46.431 129.734-16.433 13.425-26.94 33.805-26.94 56.589v56.083c0 9.423 7.64 17.063 17.063 17.063h112.616c9.423 0 17.063-7.64 17.063-17.063v-56.083c0-22.783-10.507-43.163-26.94-56.589zm-46.999-95.498c21.515 0 39.02 17.504 39.02 39.02 0 21.515-17.504 39.02-39.02 39.02s-39.02-17.504-39.02-39.02c0-21.515 17.504-39.02 39.02-39.02zm39.813 191.106h-78.49V187c0-18.595 14.963-36.598 33.365-39.27 24.237-3.52 45.125 15.156 45.125 38.592v39.02zM147.158 382.267c53.172-43.439 22.299-129.734-46.431-129.734-68.742 0-99.597 86.3-46.431 129.734-16.433 13.425-26.94 33.805-26.94 56.589v56.083c0 9.423 7.64 17.063 17.063 17.063h112.616c9.423 0 17.063-7.64 17.063-17.063v-56.083c0-22.784-10.507-43.164-26.94-56.589zm-46.208-95.609c21.515 0 39.02 17.504 39.02 39.02s-17.504 39.02-39.02 39.02c-21.515 0-39.02-17.504-39.02-39.02.002-21.515 17.505-39.02 39.02-39.02zm39.022 191.216h-78.49v-38.342c0-18.595 14.963-36.598 33.365-39.27 24.237-3.52 45.125 15.156 45.125 38.592v39.02zM457.704 382.267c53.172-43.439 22.299-129.734-46.431-129.734-68.742 0-99.597 86.3-46.431 129.734-16.433 13.425-26.94 33.805-26.94 56.589v56.083c0 9.423 7.64 17.063 17.063 17.063h112.616c9.423 0 17.063-7.64 17.063-17.063v-56.083c.001-22.785-10.507-43.164-26.94-56.589zm-46.654-95.609c21.515 0 39.02 17.504 39.02 39.02s-17.504 39.02-39.02 39.02c-21.515 0-39.02-17.504-39.02-39.02s17.504-39.02 39.02-39.02zm39.469 191.216h-78.49v-38.342c0-18.595 14.963-36.598 33.365-39.27 24.237-3.52 45.125 15.156 45.125 38.592v39.02zM318.605 395.963l-45.541-45.541v-64.405c0-9.423-7.64-17.063-17.063-17.063-9.423 0-17.063 7.64-17.063 17.063v64.405l-45.541 45.541c-6.664 6.664-6.664 17.467 0 24.13 6.662 6.664 17.467 6.664 24.13 0l38.474-38.474 38.474 38.474c6.663 6.663 17.467 6.664 24.13 0s6.663-17.467 0-24.13z"/></svg>
+    </div>
+    <div class="stat-title">Collab's réalisées</div>
+    <div class="stat-value">2.6M</div>
+    <div class="stat-desc">qui t'ont permises de level up!</div>
+  </div>
+  
+</div>
+	</div>
+	<div class="box md:col-start-2 md:col-span-3">
+	<div class="card w-full grow bg-base-100 shadow-xl image-full">
+  <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
+  <div class="card-body">
+    <h2 class="card-title">La communauté Hyvi</h2>
+    <p>Découvre les artistes et professionnels du showbizz sans le bizz ! Boost ta carrière artistique en boostant celles des autres, en développant ton réseau ou en créant et en participant à des collab's.</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">C'est parti!</button>
+    </div>
+  </div>
+</div>
+</div>
+	<div class="box">
+	<div class="card w-full grow bg-base-100 shadow-xl">
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">Mes prestations</h2>
+    <p class="p-2">Remplis ton catalogue de prestations et tiens le à jour pour qu'on puisse te booker.</p>
+    <div class="card-actions">
+      <button class="btn btn-primary">Remplir</button>
+    </div>
+  </div>
+</div>
+</div>
+	<div class="box">
+	<div class="card w-full grow bg-base-100 shadow-xl">
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">Ma communication</h2>
+    <p class="p-2">Un dépliant? Une carte de visite? Tu nous donnes beaucoup d'infos donc autant que cela te soit super utile!</p>
+    <div class="card-actions">
+      <button class="btn btn-primary">Générer un support</button>
+    </div>
+  </div>
+</div>
+</div>
+	<div class="box">
+	<div class="card w-full grow bg-base-100 shadow-xl">
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">Espace création</h2>
+    <p class="p-2">Développe tes projets artistiques! Tu peux les ouvrir à la collab ou les laisser privés.</p>
+    <div class="card-actions">
+      <button class="btn btn-primary">Créer</button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>

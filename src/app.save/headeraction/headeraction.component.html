@@ -1,0 +1,48 @@
+<container [ngSwitch]="headerbuttonvalue">
+    <div *ngSwitchDefault class="card w-full grow bg-base-100 shadow-xl image-full">
+        <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
+        <div class="card-body">
+            <h2 class="card-title">La communauté Hyvi</h2>
+            <p>Découvre les artistes et professionnels du showbizz sans le bizz ! Boost ta carrière artistique en boostant celles des autres, en développant ton réseau ou en créant et en participant à des collab's.</p>
+            <div class="card-actions justify-end">
+                <button (click)="headerbutton()" class="btn btn-primary">C'est parti!</button>
+            </div>
+        </div>
+    </div>
+<div *ngSwitchCase="'active'" class="grid grid-cols-1 md:grid-cols-3 grid-rows-none gap-4 w-full h-full">
+
+<div class="box md:col-span-3">
+
+       <div class="card w-full grow bg-base-100 shadow-xl">
+        <div class="card-body">
+<label (click)="headerbutton()" class="btn btn-sm btn-circle absolute m-2 right-2 top-2">✕</label>
+            <h2 class="card-title">Recherche avancée</h2>
+<select class="select select-bordered w-full">
+  <option disabled selected>Catégorie</option>
+  <option>Han Solo</option>
+  <option>Greedo</option>
+</select>
+<input type="text" placeholder="Mots-clés" class="input input-bordered w-full" />
+<button class="btn btn-outline btn-primary">Rechercher</button>
+        </div>
+    </div>
+
+</div>
+
+<div *ngFor="let movie of Movies" class="box">
+
+	<div class="card w-full grow bg-base-100 shadow-xl">
+        <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
+        <div class="card-body">
+            <h2 class="card-title">{{movie.name}}</h2>
+            <p>artiste.description</p>
+            <div class="card-actions justify-end">
+                <button class="btn btn-primary">En savoir +</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+</container>
+

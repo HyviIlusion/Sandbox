@@ -1,0 +1,25 @@
+<app-navbar></app-navbar>
+<div class="container mx-auto p-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-none gap-4 w-full h-full">
+        <div class="hidden md:block box md:row-span-3">
+            <app-profil></app-profil>
+        </div>
+        <div class="box md:row-end-1 md:col-start-2 md:col-span-3">
+            <app-stats></app-stats>
+        </div>
+	<div [ngSwitch]="NavSection.NavSectionvalue" class="box md:col-start-2 md:col-span-3">
+            <app-headeraction *ngSwitchDefault></app-headeraction>
+            <app-booking *ngSwitchCase="'bookingvue'"></app-booking>
+            <app-prestations *ngSwitchCase="'prestationsvue'"></app-prestations>
+	</div>
+        <div class="box">
+            <app-prestationsaction></app-prestationsaction>
+        </div>
+        <div class="box">
+            <app-communicationaction></app-communicationaction>
+        </div>
+        <div class="box">
+            <app-creationaction></app-creationaction>
+        </div>
+    </div>
+</div>
